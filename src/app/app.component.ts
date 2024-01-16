@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'screenshot-second-chance';
-  shouldDownload() {
-    console.log('irole');
+  shouldDownload(html2canvas: boolean) {
+    if (html2canvas) {
+    } else {
+    }
   }
 }

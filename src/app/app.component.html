@@ -1,6 +1,6 @@
 <div class="container">
   <div id="area-to-print">
-    <h3>Crime and Punishment</h3>
+    <h2>Crime and Punishment</h2>
 
     <p>
       "He was so immersed in himself and had isolated himself so much from
@@ -12,5 +12,12 @@
 
     <img src="assets/book.jfif" alt="open book" />
   </div>
-  <button mat-button color="accent" (click)="shouldDownload()">Download</button>
+  <div class="button-wrapper">
+    <button mat-fab color="accent" (click)="shouldDownload(true)">
+      <mat-icon>content_copy</mat-icon>
+    </button>
+    <button mat-fab color="primary" (click)="shouldDownload(false)">
+      <mat-icon>content_copy</mat-icon>
+    </button>
+  </div>
 </div>
