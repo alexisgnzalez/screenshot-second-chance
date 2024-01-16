@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NgxCaptureModule } from 'ngx-capture';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { NgxCaptureModule } from 'ngx-capture';
     MatButtonModule,
     MatIconModule,
     NgxCaptureModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

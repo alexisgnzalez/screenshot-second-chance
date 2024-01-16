@@ -23,7 +23,7 @@ export class AppComponent {
     } else {
       console.log('using dom to image');
       domtoimage
-        .toJpeg(this.areaToPrint.nativeElement, { quality: 0.95 })
+        .toJpeg(this.areaToPrint.nativeElement, { quality: 1 })
         .then(function (dataUrl) {
           let link = document.createElement('a');
           link.download = 'my-image-name.jpeg';
